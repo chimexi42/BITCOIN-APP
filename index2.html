@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <title>Email Validation</title>
+
+
+    <style>
+        *,
+        *:before,
+        *:after{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            background: linear-gradient(
+                135deg,
+                #61d954,
+                #2ebf75
+            
+            )
+              
+        }
+
+
+        .container{
+            width: 400px;
+            background-color: #ffffff;
+            padding: 50px 30px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left:50%;
+            border-radius:10px;
+            box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+            color: #111111;
+
+        }
+        label,input{
+            font-family: 'poppins', sans-serif;
+        }
+
+        label{
+            display: inline-block;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        input[type= "email"]{
+            display: inline-block;
+            border: 2px solid #d1d3d4;
+            width: 88%;
+            height:  50px;
+            border-radius: 5px;
+            outline: none;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+
+        }
+        #error-msg {
+            //display:none;
+            color : #ff2851;
+            font-size: 14px;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="email-id">Email Id</label><br>
+        <input type="email" id="email-id">
+        <div class="icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <p id="error-msg">Please enter a valid Email Id</p>
+    </div>
+    
+
+
+
+
+    <script src= "index.js"></script>
+</body>
+</html>
